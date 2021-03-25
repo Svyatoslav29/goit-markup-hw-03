@@ -77,6 +77,21 @@
     color: var(--main-text-color);
   }
 
+  .list-nav-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .link-head-adress {
+    padding-top: 32px;
+    padding-bottom: 32px; 
+  }
+
+  /* .navigation {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  */
   .link-head-adress:hover,
   .link-head-adress:focus {
       color: var(--accent-color);
@@ -103,8 +118,6 @@
   }
   
   .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
   }
 
@@ -140,6 +153,17 @@
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 
 /* портфолио мейнсек */
 
@@ -171,6 +195,7 @@
   background: var(--white-bg-color);
   border-radius: 4px;
   height: 38px;
+  margin-right: 8px;
     }
   
   .button:hover,
@@ -182,7 +207,7 @@
   }
   
   .active {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -203,7 +228,7 @@
 
 .portfolio-filters {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
 }
@@ -241,8 +266,7 @@ margin: 20px 24px 20px 24px;
     background-color: var(--dark-bg-color);
     position: relative;
     width: 100%;
-    height: 600px;
-    margin-bottom: 94px;  
+    height: 600px;  
   }
 
   .main-sec-advantages-text {
@@ -264,6 +288,7 @@ margin: 20px 24px 20px 24px;
 
  .advantage-sec {
    margin-bottom: 94px;
+   margin-top: 94px;
  }
 
  .advantages {
@@ -299,6 +324,16 @@ margin-right: 30px;
   grid-column-gap: 30px; 
 }
 
+.list-main-team {
+  margin-bottom: 94px;
+}
+
+.team-item {
+  background: var(--bg-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+} 
+
  .main-sec-worker {
     font-weight: 500;
     font-size: 16px;
@@ -316,6 +351,7 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 30px;
  }
 
  
@@ -383,11 +419,12 @@ margin-bottom: 50px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  
+
   .footer-sec {
     width: 100%;
     height: 252px;
   }
+
 
   .footer-sec .webstudio {
     display: inline-block;
