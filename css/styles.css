@@ -192,7 +192,6 @@
   border-radius: 4px;
   border: none;
   height: 38px;
-  margin-right: 8px;
     }
   
   .button:hover,
@@ -223,10 +222,18 @@
    grid-row-gap: 30px;
 }
 
+.portfolio-list-item-cont {
+  padding: 20px 24px;
+}
+
 .portfolio-filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.list-portfolio-filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .item-name {
@@ -235,7 +242,7 @@ font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
 color: var(--title-color);
-margin: 20px 24px 20px 24px;
+margin-bottom: 4px;
 }
 
   .item-name-type {
@@ -243,7 +250,6 @@ margin: 20px 24px 20px 24px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin: 0px 24px 20px 24px;
   }
 
   .portfolio-list-item {
@@ -284,6 +290,7 @@ margin: 20px 24px 20px 24px;
 
  .advantage-sec {
   padding-top: 94px;
+  padding-bottom: 94px;
  }
 
  .advantages {
@@ -297,7 +304,6 @@ margin-right: 30px;
 }
 
 .about-us-sec {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -328,6 +334,11 @@ margin-right: 30px;
 .list-main-team {
   margin-bottom: 94px;
 }
+ 
+.main-team-item-container { 
+  padding-top: 30px;
+  padding-bottom: 30px;
+} 
 
 .team-item {
   background: var(--bg-text-color);
@@ -343,7 +354,6 @@ margin-right: 30px;
     letter-spacing: 0.03em;
     color: var(--title-color);
     margin-bottom: 10px;
-    margin-top: 30px;
  }
 
  .main-sec-worker-text {
@@ -352,7 +362,6 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin-bottom: 30px;
  }
 
  
@@ -483,3 +492,7 @@ margin-bottom: 50px;
 .link-adress-map-footer:hover {
     color: var(--accent-color);
 }
+
+.address li:not(:last-child) {
+  margin-bottom: 9px;
+  }
