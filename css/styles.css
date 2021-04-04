@@ -18,6 +18,7 @@
 --dark-bg-color: #2F303A;
 --bg-text-color: #FFFFFF;
 --white-bg-color: #F5F4FA;
+--icon-main-color: #AFB1B8;
   }
 
   .html {
@@ -236,6 +237,10 @@
   margin-right: 8px;
 }
 
+.social-icons {
+  margin-top: 16px;
+}
+
 .item-name {
 font-weight: bold;
 font-size: 18px;
@@ -258,6 +263,65 @@ margin-bottom: 4px;
     box-sizing: border-box
   }
 
+  .portfolio-list-item:focus,
+  .portfolio-list-item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+
+ /* иконки */
+
+ .list-menu-item .icon{
+  height: 16px;
+  width: 10px;
+  stroke: var(--main-text-color);
+  margin-right: 10px;
+ }
+ 
+.link-head-adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-head-adress:hover .icon,
+.link-head-adress:focus .icon {
+stroke: var(--accent-color);
+}
+
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+ .social-icons .icon {
+   width: 20px;
+   height: 20px;
+   fill: var(--icon-main-color);
+ }
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--bg-text-color);
+  background-color: var(--accent-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
   /* мейн секшн студия */
 
   .first-main-sec {
@@ -265,11 +329,41 @@ margin-bottom: 4px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--dark-bg-color);
     position: relative;
-    width: 100%;
-    height: 600px;  
+    max-width: 1600px;
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+    url(../images/hero1.jpg);
   }
+
+  .advantage-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-bg-color);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
+  .advantage-item-container .icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  .list advantages .advantage-item-container:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .list-menu-item .icon {
+    stroke: var(--main-text-color);
+    margin-right: 10px;
+   }
+   
 
   .main-sec-advantages-text {
     font-size: 14px;
@@ -344,6 +438,7 @@ margin-right: 30px;
   background: var(--bg-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 } 
 
  .main-sec-worker {
@@ -418,6 +513,53 @@ letter-spacing: 0.03em;
 color: var(--title-color);
 margin-bottom: 50px;
 }
+
+.clients-title {
+  font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-top: 94px;
+}
+
+.clients-sec-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 30px; 
+  list-style: none;
+  box-sizing: inherit;
+  margin-bottom: 94px;
+  margin-top: 50px;
+}
+
+.clients-sec-link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.clients-sec-item .icon {
+fill: var(--icon-main-color);
+}
+
+.clients-sec-item:hover,
+.clients-sec-item:focus {
+  border: 1px solid #2196F3;
+}
+
+
+.clients-sec-link:hover .icon,
+.clients-sec-link:focus .icon {
+  fill: var(--accent-color);
+}
+
 
  /* секция футера */
 
@@ -496,3 +638,27 @@ margin-bottom: 50px;
 .address li:not(:last-child) {
   margin-bottom: 9px;
   }
+
+  .social-sec .social-icons-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-icons-link:hover,
+  .social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  list-style: none;
+}
+
+.footer-title {
+  font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--bg-text-color);
+}
