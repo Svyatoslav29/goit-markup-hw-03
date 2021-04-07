@@ -201,6 +201,8 @@
       color: var(--bg-text-color);
       background-color: var(--accent-color);
       cursor: pointer;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
   }
   
   .active {
@@ -337,6 +339,8 @@ stroke: var(--accent-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
     url(../images/hero1.jpg);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advantage-item-container {
@@ -537,11 +541,17 @@ margin-bottom: 50px;
 .clients-sec-link {
   width: 170px;
   height: 90px;
-  border: 1px solid #EEEEEE;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*border: 1px solid #EEEEEE;
+border-radius: 4px;*/
+
+.clients-sec-item {
+  border: 1px solid #EEEEEE;
   border-radius: 4px;
 }
 
